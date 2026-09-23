@@ -1,7 +1,7 @@
 title: Alex Nowak — Python & AI Engineer
 description: Resume of a Python and artificial intelligence engineer building reliable machine-learning products.
-url: https://alexnowak.github.io
-baseurl: ""
+url: https://ghost717.github.io
+baseurl: "/jekyll-resume"
 
 theme: hacked-jekyll
 
