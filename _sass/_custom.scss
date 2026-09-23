@@ -1,5 +1,12 @@
-// Keep the original hacked-jekyll look, but let a longer CV flow down the page
-// instead of vertically centering it outside the viewport.
+body {
+  background-color: #050806;
+  background-image: url("/assets/images/bg.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 main {
   position: relative;
   top: auto;
@@ -30,3 +37,4 @@ main {
     margin-left: 1rem;
   }
 }
+
