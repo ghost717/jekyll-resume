@@ -1,0 +1,28 @@
+// Small readability improvements while retaining the theme's terminal aesthetic.
+main {
+  max-width: 72rem;
+}
+
+#json {
+  line-height: 1.55;
+}
+
+#json > div {
+  margin-bottom: 0.75rem;
+}
+
+a.value {
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.2em;
+}
+
+@media (max-width: 40rem) {
+  main {
+    padding: 1.25rem;
+  }
+
+  #json {
+    font-size: 0.9rem;
+    overflow-wrap: anywhere;
+  }
+}
