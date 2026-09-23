@@ -1,27 +1,21 @@
-title: Jason Nowak — Python & AI Engineer
+title: Alex Nowak — Python & AI Engineer
 description: Resume of a Python and artificial intelligence engineer building reliable machine-learning products.
-url: https://jason.github.io
+url: https://alexnowak.github.io
 baseurl: ""
 
 theme: hacked-jekyll
 
 lang: en
-author: Jason Nowak
+author: Alex Nowak
 
-# color_bg: gray-9
-# color_punct: cyan-8
-# color_key: cyan-4
-# color_value: gray-3
-# color_hover: yellow-4
-color_bg: indigo-5
-color_punct: teal-6
-color_key: grape-7
-color_value: lime-8
-color_hover: cyan-9
-
+color_bg: gray-9
+color_punct: green-9
+color_key: green-4
+color_value: green-4
+color_hover: green-5
 quotes: true
 commas: true
-lowercase: false
+lowercase: true
 newtab: true
 
 plugins:
@@ -32,8 +26,8 @@ sass:
   sourcemap: never
 
 exclude:
-  # - Gemfile.lock
   - Gemfile
+  - Gemfile.lock
   - LICENSE
   - README.md
   - vendor/

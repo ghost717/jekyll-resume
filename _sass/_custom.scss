@@ -1,28 +1,32 @@
-// Small readability improvements while retaining the theme's terminal aesthetic.
+// Keep the original hacked-jekyll look, but let a longer CV flow down the page
+// instead of vertically centering it outside the viewport.
 main {
-  max-width: 72rem;
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: none;
+  width: 90%;
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: 3rem 0;
 }
 
 #json {
-  line-height: 1.55;
+  line-height: 1.45;
+  white-space: normal;
 }
 
-#json > div {
-  margin-bottom: 0.75rem;
-}
-
-a.value {
-  text-decoration-thickness: 0.08em;
-  text-underline-offset: 0.2em;
-}
-
-@media (max-width: 40rem) {
+@media (max-width: 575px) {
   main {
-    padding: 1.25rem;
+    width: calc(100% - 2rem);
+    padding: 1.5rem 0;
   }
 
   #json {
-    font-size: 0.9rem;
     overflow-wrap: anywhere;
+  }
+
+  .ms {
+    margin-left: 1rem;
   }
 }
