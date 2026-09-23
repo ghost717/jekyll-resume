@@ -1,0 +1,32 @@
+// Keep the original hacked-jekyll look, but let a longer CV flow down the page
+// instead of vertically centering it outside the viewport.
+main {
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: none;
+  width: 90%;
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+#json {
+  line-height: 1.45;
+  white-space: normal;
+}
+
+@media (max-width: 575px) {
+  main {
+    width: calc(100% - 2rem);
+    padding: 1.5rem 0;
+  }
+
+  #json {
+    overflow-wrap: anywhere;
+  }
+
+  .ms {
+    margin-left: 1rem;
+  }
+}

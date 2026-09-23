@@ -1,0 +1,78 @@
+- key: name
+  value: Alex Nowak
+
+- key: role
+  value:
+    - Python Engineer
+    - AI / Machine Learning Engineer
+    - Builder of reliable data products
+  typed: true
+
+- key: location
+  value: Warsaw, Poland · remote friendly
+
+- key: about
+  value:
+    - I turn ambiguous product ideas into maintainable Python services.
+    - I build and ship machine-learning systems from experiment to production.
+    - I care about measurable impact, clear communication, and pragmatic engineering.
+
+- key: experience
+  value:
+    - key: 2023—now · Senior AI Engineer · Neural Forge
+      value: Led an LLM-powered knowledge platform, cutting support resolution time by 38%; introduced evaluation, observability, and safe release pipelines.
+    - key: 2020—2023 · Python Engineer · Data Harbor
+      value: Built event-driven APIs and data pipelines processing 20M+ records daily; improved p95 latency by 45% and mentored four engineers.
+    - key: 2018—2020 · Software Engineer · Cloud Craft
+      value: Developed Django services, automated cloud delivery, and raised critical-path test coverage from 62% to 91%.
+
+- key: selected_projects
+  value:
+    - key: Atlas RAG
+      value: Retrieval platform for internal documentation with hybrid search, source citations, offline evaluation, and human feedback loops.
+    - key: Driftwatch
+      value: Open-source toolkit for detecting feature and prediction drift in batch ML workflows.
+    - key: Forecast API
+      value: FastAPI service serving probabilistic demand forecasts with automated retraining and canary deployments.
+
+- key: stack
+  value:
+    - Python · FastAPI · Django · asyncio
+    - PyTorch · scikit-learn · Hugging Face · LangChain
+    - PostgreSQL · Redis · Kafka · dbt
+    - Docker · Kubernetes · AWS · Terraform
+    - MLflow · Airflow · GitHub Actions · Prometheus
+
+- key: strengths
+  value:
+    - Production ML and LLM evaluation
+    - Backend architecture and API design
+    - Data pipelines and model lifecycle
+    - Technical leadership and mentoring
+
+- key: education
+  value:
+    - key: MSc Computer Science · Warsaw University of Technology
+      value: 2016—2018 · specialization in artificial intelligence
+    - key: BEng Computer Science · Gdańsk University of Technology
+      value: 2012—2016 · software engineering track
+
+- key: languages
+  value:
+    - Polish · native
+    - English · C1
+
+- key: contact
+  value:
+    - key: email
+      value: hello@alexnowak.dev
+      url: "mailto:hello@alexnowak.dev"
+    - key: github
+      value: github.com/alexnowak
+      url: https://github.com/
+    - key: linkedin
+      value: linkedin.com/in/alexnowak
+      url: https://www.linkedin.com/
+
+- key: status
+  value: Open to meaningful Python and AI projects.
