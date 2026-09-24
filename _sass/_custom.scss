@@ -12,15 +12,13 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-  background-image: url("/assets/images/bg.png");
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  opacity: 0.2;
-    /* Tutaj kontrolujesz przezroczystość */
+    background-image: url("/assets/images/bg.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    opacity: 0.2;
     z-index: -1;
     pointer-events: none;
-    /* Zapobiega przechwytywaniu kliknięć przez tło */
 }
 
 main {
@@ -39,6 +37,103 @@ main {
   white-space: normal;
 }
 
+.site-nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 0 auto 1.5rem;
+  max-width: 68rem;
+}
+
+.site-nav a,
+.print-actions a,
+.print-actions button {
+  color: #9ae6b4;
+  font: inherit;
+  text-decoration: underline;
+}
+
+.print-cv {
+  max-width: 52rem;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background: #fff;
+  color: #20252b;
+  font: 15px/1.5 Arial, sans-serif;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.print-cv h1,
+.print-cv h2,
+.print-cv h3 {
+  color: #15202b;
+  line-height: 1.2;
+}
+
+.print-cv h1 {
+  margin: 0;
+  font-size: 2.25rem;
+}
+
+.print-cv h2 {
+  margin: 1.5rem 0 .5rem;
+  padding-bottom: .25rem;
+  border-bottom: 1px solid #cbd5e1;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
+.print-cv h3 {
+  margin: .8rem 0 .2rem;
+  font-size: 1rem;
+}
+
+.print-cv p {
+  margin: .25rem 0 .65rem;
+}
+
+.print-cv a {
+  color: inherit;
+  overflow-wrap: anywhere;
+}
+
+.print-cv .cv-role {
+  margin: .25rem 0 .5rem;
+  color: #334155;
+  font-size: 1.1rem;
+}
+
+.print-cv .cv-contact,
+.print-cv .cv-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem 1rem;
+  margin: .5rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.print-cv .cv-entry {
+  break-inside: avoid;
+}
+
+.print-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 52rem;
+  margin: 1rem auto;
+}
+
+.print-actions button {
+  padding: .5rem .75rem;
+  border: 1px solid #9ae6b4;
+  border-radius: .25rem;
+  background: transparent;
+  cursor: pointer;
+}
+
 @media (max-width: 575px) {
   main {
     width: calc(100% - 2rem);
@@ -52,5 +147,50 @@ main {
   .ms {
     margin-left: 1rem;
   }
+
+  .print-cv {
+    margin: 1rem auto;
+    padding: 1.25rem;
+  }
+
+  .print-actions {
+    flex-direction: column;
+  }
 }
 
+@media print {
+  @page {
+    size: A4;
+    margin: 14mm;
+  }
+
+  body,
+  body:has(.print-cv) {
+    background: #fff !important;
+    color: #111 !important;
+  }
+
+  body:has(.print-cv) main {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  body:has(.print-cv) .print-cv {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    font-size: 10pt;
+  }
+
+  .print-actions,
+  .site-nav {
+    display: none !important;
+  }
+
+  .print-cv h2 {
+    break-after: avoid;
+  }
+}
